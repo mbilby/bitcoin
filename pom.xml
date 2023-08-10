@@ -68,12 +68,11 @@
       <version>1.1.1</version>
     </dependency>
 
-    <!--    Converte para JSON-->
+    <!--    CONVERTE PARA JSON-->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy-reactive-jsonb</artifactId>
     </dependency>
-
     <!--    MOCKITO-->
     <dependency>
       <groupId>org.mockito</groupId>
@@ -86,6 +85,27 @@
       <artifactId>mockito-junit-jupiter</artifactId>
       <version>4.8.1</version>
       <scope>test</scope>
+    </dependency>
+    <!--    BANCO DE DADOS-->
+    <!--    JDBC-->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-jdbc-postgresql</artifactId>
+    </dependency>
+    <!--    FLYWAY-->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-flyway</artifactId>
+    </dependency>
+    <!--    HIBERNATE-->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-hibernate-orm-panache</artifactId>
+    </dependency>
+    <!--    YAML-->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-config-yaml</artifactId>
     </dependency>
 
   </dependencies>
