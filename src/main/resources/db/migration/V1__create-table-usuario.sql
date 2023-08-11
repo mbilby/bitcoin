@@ -1,9 +1,10 @@
-create table transacao(
+create table usuario(
     id uuid primary key,
-    nome varchar2(50),
-    cpf varchar2(14),
-    username varchar2(50),
-	password varchar2(10),
+    nome varchar(50),
+    cpf varchar(14),
+    username varchar(50),
+	password varchar(10),
+	role varchar(10),
     created timestamp,
 	changed timestamp
 );

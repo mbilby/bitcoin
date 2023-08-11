@@ -1,21 +1,23 @@
 quarkus:
-  application:
-    name: bitcoin
   http:
     port: 8081
-#  datasource:
-#    db-kind: postgresql
-#    jdbc:
-#      url: jdbc:postgresql://localhost:5432/[database]?autoReconnect=true
-#      driver: org.postgresql.Driver
-#    username: postgres
-#    password: Herika30#
-#  flyway:
-#    schemas:
-#    locations:
-#    migrate-at-start:
-
-bitcoin:
-  mp-rest:
-    url: https://64d39dfa67b2662bf3dc83f1.mockapi.io
-    scope: jakarta.enterprise.context.RequestScoped
+  rest-client:
+    bitcoin:
+      url: https://64d39dfa67b2662bf3dc83f1.mockapi.io
+      scope: jakarta.enterprise.context.RequestScoped
+  datasource:
+    db-kind: postgresql
+    username: postgres
+    password: Herika30#
+    jdbc:
+      url: jdbc:postgresql://localhost:5432/bitcoin?autoReconnect=true
+      driver: org.postgresql.Driver
+  hibernate-orm:
+    database:
+      generation: drop-and-create
+  flyway:
+    enabled: true
+    migrate-at-start: true
+  log:
+    file:
+      enable: false

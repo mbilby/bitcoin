@@ -107,6 +107,16 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-config-yaml</artifactId>
     </dependency>
+    <!--    JPA JAVA PERSISTENCE API-->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-spring-data-jpa</artifactId>
+    </dependency>
+    <!--    SECURITY-->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-security-jpa</artifactId>
+    </dependency>
 
   </dependencies>
   <build>
